@@ -4,6 +4,8 @@
 
 This is a simple countdown timer website that displays the time remaining until a specified date and time. It is built using HTML, CSS, and JavaScript.
 
+![Countdown Image](image.jpg)
+
 ## Installation
 
 To run this project locally on your computer, follow these steps:
@@ -33,3 +35,8 @@ You can customize the countdown timer by modifying the JavaScript code in the `s
 ```javascript
 // Set the target date and time for the countdown (YYYY-MM-DDTHH:mm:ss)
 const targetDate = new Date('2023-12-10T18:00:00').getTime();
+
+##Contact
+
+If you have any questions or feedback, please feel free to contact me at:
+Tak_simon@proton.me 
