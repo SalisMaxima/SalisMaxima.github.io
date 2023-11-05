@@ -56,7 +56,10 @@ function updateCountdownAndImages() {
                 document.body.appendChild(videoContainer);
                 // Set the innerHTML of the video container
                 videoContainer.innerHTML = `
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YMy5uugeEis?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <video width="560" height="315" controls autoplay muted>
+                        <source src="Rocky.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 `;
             }
 
