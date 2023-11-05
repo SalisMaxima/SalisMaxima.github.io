@@ -48,7 +48,17 @@ function updateCountdownAndImages() {
         // Update the image based on the number of days left
         if (days >= 1 && days <= 7) {
             document.querySelector('.countdown-container img').src = imageSources[7 - days];
-            
+            let videoContainer = document.getElementById('videoContainer');
+            if (!videoContainer) {
+                // Create a new video container if it doesn't exist
+                videoContainer = document.createElement('div');
+                videoContainer.id = 'videoContainer';
+                document.body.appendChild(videoContainer);
+                // Set the innerHTML of the video container
+                videoContainer.innerHTML = `
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YMy5uugeEis?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                `;
+            }
 
             
         }
